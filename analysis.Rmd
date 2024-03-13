@@ -9,7 +9,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Read config file
+# Read settings file
 
 ```{r}
 if (!file.exists("settings.R")) {
