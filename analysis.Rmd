@@ -1,0 +1,34 @@
+---
+title: "Sample Analysis"
+author: "Dan Kerchner"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Read config file
+
+```{r}
+source("settings.R")
+```
+
+# Read in data
+```{r}
+df <- read.csv(paste0('data/', data_file))
+```
+
+
+# Analysis for `r site` data
+```{r}
+if (site == 'ghana') {
+  # do something
+}
+if (site == 'pakistan') {
+  # do something else
+}
+```
+
+
