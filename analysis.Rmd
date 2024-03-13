@@ -12,6 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 # Read config file
 
 ```{r}
+if (!file.exists("settings.R")) {
+  stop("Please create settings.R before proceeding.  You can start by making and customizing a copy of example.settings.R")
+}
 source("settings.R")
 ```
 
@@ -30,5 +33,3 @@ if (site == 'pakistan') {
   # do something else
 }
 ```
-
-
