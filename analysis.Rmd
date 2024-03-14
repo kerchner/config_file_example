@@ -26,10 +26,10 @@ df <- read.csv(paste0('data/', data_file))
 
 # Analysis for `r site` data
 ```{r}
-if (site == 'ghana') {
+if (site == 'Ghana') {
   # do something
 }
-if (site == 'pakistan') {
+if (site == 'Pakistan') {
   # do something else
 }
 ```
